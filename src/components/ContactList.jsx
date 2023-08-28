@@ -30,6 +30,25 @@ function ContactList({ numbers }) {
     setFilterText(event.target.value);
   };
 
+  if (contacts.length === 0) {
+    return (
+      <div className={styles.ldsDefault}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <input
